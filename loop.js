@@ -96,9 +96,24 @@ increment or decrement
 
 // Nested loop
 
-for (let i = 1; i <= 5; i++) {
-  console.log("Hello this is me from Bangladesh", i);
-  for (let i = 1; i <= 3; i++) {
-    console.log("Hii this is Dhaka", i);
+// for (let i = 1; i <= 5; i++) {
+//   console.log("Hello this is me from Bangladesh", i);
+//   for (let i = 1; i <= 3; i++) {
+//     console.log("Hii this is Dhaka", i);
+//   }
+// }
+
+// Loop Break
+
+const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let i = 0; i < digits.length; i++) {
+  //   if (digits[i] === 5) {
+  //     break;
+  //   }
+  if (digits[i] === 5) {
+    continue;
   }
+  console.log(digits[i]);
+  //   console.log("Loop Break");
 }
